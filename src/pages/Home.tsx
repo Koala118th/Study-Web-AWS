@@ -87,7 +87,7 @@ export default function Home() {
                     <pre>
                         {`<Route
     path="/example"
-    element={<ExamplePage />}
+    element={<Example />}
 />`}
                     </pre>
                 </li>
@@ -95,9 +95,18 @@ export default function Home() {
                 <li>
                     Add a navigation link to the feature.
                     <pre>
-                        {`<Link to="/inventory">
-  Inventory
+                        {`<Link to="/example">
+  Example
 </Link>`}
+                    </pre>
+                    Or
+                    <pre>
+                        {`const features = [
+    {
+        name: "Example",
+        path: "/example",
+    }
+];`}
                     </pre>
                 </li>
                 <li>
