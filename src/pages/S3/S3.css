@@ -224,7 +224,24 @@ td {
    Policy Breakdown
 ========================= */
 
+.policy-code-box {
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+
+    background: #1f2937;
+    /* dark slate like AWS console */
+    border: 1px solid #374151;
+    border-left: 4px solid #60a5fa;
+
+    border-radius: 12px;
+
+    color: #e5e7eb;
+
+    line-height: 1.6;
+}
+
 .policy-code-line {
+    margin-top: 1rem;
     padding: 1rem;
     background: #111827;
     border-radius: 12px;
@@ -267,12 +284,6 @@ td {
     color: #facc15;
 }
 
-.json-code-select optgroup {
-    color: #facc15;
-    /* label color */
-    font-weight: bold;
-}
-
 .json-code-text {
     display: inline;
     width: auto;
@@ -286,15 +297,4 @@ td {
     margin: 0;
 
     outline: none;
-}
-
-.group-label {
-    color: white;
-    font-weight: bold;
-    padding: 4px 8px;
-}
-
-.option:hover {
-    background: #1f2937;
-    color: #facc15;
 }

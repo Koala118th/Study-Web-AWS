@@ -1,10 +1,13 @@
-import { useState } from "react";
-const actions = {
-    Read: ["s3:GetObject", "s3:ListBucket"],
-    Write: ["s3:PutObject", "s3:DeleteObject"],
-    Admin: ["s3:PutBucketPolicy", "s3:DeleteBucketPolicy"],
-    Full: ["s3:*"]
-};
+import { act, useState } from "react";
+const actions = [
+    "s3:GetObject",
+    "s3:ListBucket",
+    "s3:PutObject",
+    "s3:DeleteObject",
+    "s3:PutBucketPolicy",
+    "s3:DeleteBucketPolicy",
+    "s3:*"
+];
 
 import "./S3.css";
 import S3Header from "./S3Header";
@@ -34,7 +37,7 @@ export default function S3Development() {
                         <img src={image4} alt="Paste Object URL" />
                     </div>
                 </div>
-                <h3>Why did you cannot access to the objects in the bucket?</h3>
+                <h3>If you can't access the objects, here are some things to check:</h3>
                 <img src={image2} alt="Public Access Example" />
                 <ol>
                     <li>
@@ -51,7 +54,14 @@ export default function S3Development() {
                     <li>
                         <strong>Have you set the correct permissions for the objects?</strong>
                         <img src={image5} alt="Set Object Permissions" />
-                        <PolicyCode />
+                        <div className="policy-code-box">
+                            Policy code example for allowing public read access to all objects in the bucket:
+                            <PolicyCode />
+                        </div>
+                        <div className="note-box">
+                            <strong>Note:</strong>
+                            {" "} The policy session allows you to control the permissions for the objects in the bucket.
+                        </div>
                     </li>
                 </ol>
             </div>
@@ -103,14 +113,10 @@ export function PolicyCode() {
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
             >
-                {Object.entries(actions).map(([group, items]) => (
-                    <optgroup key={group} label={group}>
-                        {items.map((action) => (
-                            <option key={action} value={action}>
-                                {action}
-                            </option>
-                        ))}
-                    </optgroup>
+                {actions.map((action) => (
+                    <option key={action} value={action}>
+                        {action}
+                    </option>
                 ))}
             </select>
 
