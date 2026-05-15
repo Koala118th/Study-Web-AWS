@@ -2,13 +2,9 @@
 
 .s3-page {
     max-width: 1200px;
-
     margin: 0 auto;
-
     padding: 2rem;
-
     line-height: 1.7;
-
     color: #1f2937;
 }
 
@@ -65,6 +61,7 @@
     padding: 1rem;
     background-color: #eff6ff;
     border-left: 4px solid #2563eb;
+    border-right: 4px solid #2563eb;
     border-radius: 10px;
     color: #1e3a8a;
 }
@@ -72,10 +69,6 @@
 /* =========================
    Checklist Styling
 ========================= */
-
-.permission-section {
-    list-style: none;
-}
 
 .checklist-item {
     margin-top: 1rem;

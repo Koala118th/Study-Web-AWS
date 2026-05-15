@@ -1,5 +1,4 @@
 // S3Overview.tsx
-
 import "./S3.css";
 import S3Header from "./S3Header";
 
@@ -7,15 +6,13 @@ export default function S3Overview() {
     return (
         <div className="s3-page">
             <S3Header />
-
+            <hr />
             {/* =========================
                 What is S3
             ========================= */}
             <div className="section-card">
                 <h2>What is S3?</h2>
-
                 <h3>Definition</h3>
-
                 <p>
                     S3 stands for Simple Storage
                     Service. It is an object
@@ -24,7 +21,6 @@ export default function S3Overview() {
                     data from anywhere on the
                     web.
                 </p>
-
                 <div className="note-box">
                     <strong>Important:</strong>
                     {" "}
@@ -37,7 +33,6 @@ export default function S3Overview() {
                     Types of S3
                 ========================= */}
                 <h3>Types of S3 Storage Classes</h3>
-
                 <p>
                     AWS provides several storage
                     classes designed for
