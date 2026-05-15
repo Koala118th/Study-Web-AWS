@@ -54,7 +54,7 @@
    DARK MODE
 ========================= */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #111827;
     --surface-color: #1f2937;
@@ -88,7 +88,7 @@
     border: 1px solid #444;
     padding: 8px;
   }
-}
+} */
 
 /* =========================
    BODY / ROOT
