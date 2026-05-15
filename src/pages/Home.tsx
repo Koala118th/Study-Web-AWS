@@ -9,6 +9,10 @@ export default function Home() {
         {
             name: "S3",
             path: "/s3",
+        },
+        {
+            name: "EC2",
+            path: "/ec2",
         }
     ];
 
