@@ -57,25 +57,27 @@ export default function S3Overview() {
                         </th>
                     </tr>
                 </thead>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Storage usage per month (GB/month)</li>
-                            <li>PUT, COPY, POST, LIST requests</li>
-                            <li>GET and retrieval requests</li>
-                            <li>Data transfer OUT to the internet</li>
-                            <li>Cross-region data transfer</li>
-                            <li>Retrieval from archival storage classes</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Data transfer INTO S3</li>
-                            <li>DELETE requests</li>
-                            <li>Same-region transfer in some AWS services</li>
-                        </ul>
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Storage usage per month (GB/month)</li>
+                                <li>PUT, COPY, POST, LIST requests</li>
+                                <li>GET and retrieval requests</li>
+                                <li>Data transfer OUT to the internet</li>
+                                <li>Cross-region data transfer</li>
+                                <li>Retrieval from archival storage classes</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Data transfer INTO S3</li>
+                                <li>DELETE requests</li>
+                                <li>Same-region transfer in some AWS services</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
             <hr />
         </div>

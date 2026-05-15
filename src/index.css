@@ -67,6 +67,19 @@
 
     --border-color: #374151;
   }
+  table {
+  background-color: #1e1e1e;
+  color: white;
+  }
+
+  tbody tr {
+    background-color: #2a2a2a;
+  }
+
+  td, th {
+    border: 1px solid #444;
+    padding: 8px;
+  }
 }
 
 /* =========================
