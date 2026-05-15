@@ -1,58 +1,184 @@
-hr {
-    margin: 24px 0;
-    border: none;
-    border-top: 2px solid #e5e7eb;
+/* S3.css */
+
+.s3-page {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    line-height: 1.7;
+
+    color: #1f2937;
 }
 
-h3 {
-    margin-top: 8px;
+/* =========================
+   Section Cards
+========================= */
+
+.section-card {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   Headings
+========================= */
+
+.s3-page h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 2rem;
+}
+
+.s3-page h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+/* =========================
+   Lists
+========================= */
+
+.s3-page ol {
+    padding-left: 1.5rem;
+}
+
+.s3-page li {
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   Notes
+========================= */
+
+.note-box {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 10px;
+    color: #1e3a8a;
+}
+
+/* =========================
+   Checklist Styling
+========================= */
+
+.permission-section {
+    list-style: none;
+}
+
+.checklist-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checklist-item label,
+.sub-checklist label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.sub-checklist {
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.sub-checklist li {
+    margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+    margin-top: 0.2rem;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* =========================
+   Images
+========================= */
+
+.s3-page img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 14px;
+    border: 1px solid #d1d5db;
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Image Captions
+========================= */
+
+.image-caption {
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* =========================
+   Tables
+========================= */
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 table {
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
-    border: 3px solid #1f2937;
+    background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.08);
-    background: white;
-    font-family: system-ui, sans-serif;
-    margin-top: 10px;
 }
 
-/* Header */
+thead {
+    background-color: #f3f4f6;
+}
+
 th {
-    background: #2563eb;
-    color: white;
-    padding: 14px 20px;
-    border: 2px solid #1e40af;
-    font-size: 1rem;
-    font-weight: 700;
+    padding: 1rem;
     text-align: left;
-}
-
-/* Cells */
-td {
-    padding: 14px 20px;
     border: 1px solid #d1d5db;
+    font-weight: 700;
+}
+
+td {
+    padding: 1rem;
     vertical-align: top;
-    line-height: 1.6;
+    border: 1px solid #d1d5db;
 }
 
-/* Zebra Striping */
-tbody tr:nth-child(even) {
-    background: #f9fafb;
+/* =========================
+   Pricing Lists
+========================= */
+
+.pricing-list {
+    margin: 0;
+    padding-left: 1.25rem;
 }
 
-/* Better line spacing inside cells */
-td br {
-    margin-bottom: 8px;
-}
-
-img {
-    max-width: 1200px;
-    height: auto;
-    image-rendering: "crisp-edges";
-    margin-top: 10px;
+.pricing-list li {
+    margin-bottom: 0.5rem;
 }
