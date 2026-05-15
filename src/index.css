@@ -67,16 +67,24 @@
 
     --border-color: #374151;
   }
+  p {
+    color: #f3f4f6 !important;
+  }
   table {
   background-color: #1e1e1e;
   color: white;
   }
 
-  tbody tr {
-    background-color: #2a2a2a;
+  tbody tr:nth-child(odd) {
+    background-color: #1e1e1e !important;
   }
 
-  td, th {
+  tbody tr:nth-child(even) {
+    background-color: #2a2a2a !important;
+  }
+
+  td {
+    background-color: inherit;
     border: 1px solid #444;
     padding: 8px;
   }

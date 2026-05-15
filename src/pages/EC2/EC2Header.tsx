@@ -2,20 +2,20 @@ import { NavLink } from "react-router-dom";
 import "../../css/header.css";
 import HomeLink from "../../component/HomeLink";
 
-export default function S3Header() {
+export default function EC2Header() {
     return (
         <header className="feature-header">
             <HomeLink></HomeLink>
-            <h1>S3</h1>
+            <h1>EC2</h1>
 
             <p>
-                This page is for S3 feature
+                This page is for EC2 feature
                 development and testing.
             </p>
 
             <nav className="feature-nav">
                 <NavLink
-                    to="/s3"
+                    to="/ec2"
                     end
                     className={({ isActive }) =>
                         isActive
@@ -27,7 +27,7 @@ export default function S3Header() {
                 </NavLink>
 
                 <NavLink
-                    to="/s3/setup"
+                    to="/ec2/setup"
                     className={({ isActive }) =>
                         isActive
                             ? "feature-link active-link"
@@ -38,7 +38,7 @@ export default function S3Header() {
                 </NavLink>
 
                 <NavLink
-                    to="/s3/development"
+                    to="/ec2/development"
                     className={({ isActive }) =>
                         isActive
                             ? "feature-link active-link"
