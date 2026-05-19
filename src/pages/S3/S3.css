@@ -48,7 +48,7 @@
     padding-left: 1.5rem;
 }
 
-.s3-page li {
+.s3-page ol li {
     margin-bottom: 1.5rem;
 }
 
@@ -176,55 +176,10 @@ td {
 }
 
 /* =========================
-   Question Cards
-========================= */
-.question-card {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: linear-gradient(135deg,
-            #f8fafc,
-            #eef2ff);
-    border: 1px solid #c7d2fe;
-    border-radius: 18px;
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.05);
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.question-card:hover {
-    transform: translateY(-2px);
-    box-shadow:
-        0 8px 18px rgba(0, 0, 0, 0.08);
-}
-
-.question-title {
-    display: inline-block;
-    margin-bottom: 0.75rem;
-    padding:
-        0.35rem 0.75rem;
-    background-color: #4338ca;
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 700;
-    border-radius: 999px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.question-content {
-    margin: 0;
-    color: #374151;
-    line-height: 1.7;
-}
-
-/* =========================
    Policy Breakdown
 ========================= */
 
-.policy-code-box {
+.code-section-box {
     margin: 2rem 0;
     padding: 1.25rem 1.5rem;
 
@@ -240,7 +195,7 @@ td {
     line-height: 1.6;
 }
 
-.policy-code-line {
+.code-section {
     margin-top: 1rem;
     padding: 1rem;
     background: #111827;
@@ -256,6 +211,12 @@ td {
 
 .json-code {
     color: #93c5fd;
+    white-space: pre-wrap;
+}
+
+
+.json-code-response {
+    color: #fbbf24;
     white-space: pre-wrap;
 }
 
