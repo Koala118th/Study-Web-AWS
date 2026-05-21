@@ -287,3 +287,7 @@ export function PolicyCodeIAM() {
         </div>
     );
 }
+
+export function QuestionCard3() {
+
+}
