@@ -2,8 +2,6 @@
 import "./S3.css";
 // Assets
 import bucketImage3 from "./assets/bucket-manage-1.png";
-import bucketImage4 from "./assets/bucket-manage-2.png";
-
 // Components
 import S3Header from "./S3Header";
 
@@ -131,21 +129,6 @@ export default function S3Setup() {
                 <p className="image-caption">
                     AWS S3 bucket management
                     console.
-                </p>
-
-                <h3>
-                    Bucket's objects management
-                    console
-                </h3>
-
-                <img
-                    src={bucketImage4}
-                    alt="Bucket Objects Management"
-                />
-
-                <p className="image-caption">
-                    AWS S3 object management
-                    interface.
                 </p>
             </div>
         </div>
