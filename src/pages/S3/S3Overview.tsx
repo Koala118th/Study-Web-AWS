@@ -1,11 +1,15 @@
 // S3Overview.tsx
+import FeatureHeader from "../../components/FeatureHeader";
 import "./S3.css";
-import S3Header from "./S3Header";
 
 export default function S3Overview() {
     return (
         <div className="s3-page">
-            <S3Header />
+            <FeatureHeader
+                title="S3"
+                description="This page is for S3 feature development and testing."
+                basePath="/s3"
+            />
             <hr />
             {/* =========================
                 What is S3

@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "../../css/header.css";
-import HomeLink from "../../component/HomeLink";
 
 export default function EC2Header() {
     return (
         <header className="feature-header">
-            <HomeLink></HomeLink>
             <h1>EC2</h1>
 
             <p>

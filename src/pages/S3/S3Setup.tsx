@@ -3,12 +3,16 @@ import "./S3.css";
 // Assets
 import bucketImage3 from "./assets/bucket-manage-1.png";
 // Components
-import S3Header from "./S3Header";
+import FeatureHeader from "../../components/FeatureHeader";
 
 export default function S3Setup() {
     return (
         <div className="s3-page">
-            <S3Header />
+            <FeatureHeader
+                title="S3"
+                description="This page is for S3 feature development and testing."
+                basePath="/s3"
+            />
             <hr />
             {/* Creating and Managing S3 Buckets */}
             <div className="section-card">

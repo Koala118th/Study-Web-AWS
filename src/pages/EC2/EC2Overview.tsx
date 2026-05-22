@@ -1,10 +1,14 @@
+import FeatureHeader from "../../components/FeatureHeader";
 import "./EC2.css";
-import EC2Header from "./EC2Header";
 export default function S3Overview() {
     return (
         <div className="ec2-page">
-            <EC2Header></EC2Header>
-            <hr/>
+            <FeatureHeader
+                title="EC2"
+                description="This page is for EC2 feature development and testing."
+                basePath="/ec2"
+            />
+            <hr />
 
             <div className="section-card">
                 <h2>What is EC2?</h2>
@@ -36,21 +40,21 @@ export default function S3Overview() {
                         <tr>
                             <th>Use case</th>
                             <td>
-                                Short-term, spiky or unpredictable workloads<br/>
+                                Short-term, spiky or unpredictable workloads<br />
                                 App development or testing
                             </td>
                             <td>
-                                predictable workloads that do not require flexibility<br/>
-                                Workloads that lasts longer than a year<br/>
+                                predictable workloads that do not require flexibility<br />
+                                Workloads that lasts longer than a year<br />
                                 Users make upfront payments to reduce total computing cost
                             </td>
                             <td>
-                                Long time workloads<br/>
+                                Long time workloads<br />
                                 Computing needs that might need flexibility over location or power
                             </td>
                             <td>
-                                Apps with flexible start and end time<br/>
-                                Very low compute prices<br/>
+                                Apps with flexible start and end time<br />
+                                Very low compute prices<br />
                                 Urgent computing needs for large ammount of additional capacity
                             </td>
                         </tr>
@@ -71,10 +75,10 @@ export default function S3Overview() {
 
                 <h4>AMI</h4>
                 <p>Use free prebuilt AMIs like Amazon Linux, Ubuntu,... Paid AMIs are from AWS marketplace or when using Windows AMI (license cost)</p>
-                
+
                 <h4>Instance type</h4>
                 <p>Instance type determines the processing power (CPU), memory (RAM), disk space and type, and network performance</p>
-                
+
                 <h4>Storage type and size</h4>
                 <p>EC2 instances use Elastic Block Store(EBS) for storage. It is a durable, detachable, high-performance block storage, work like an external hard drive</p>
 

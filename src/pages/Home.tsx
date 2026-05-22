@@ -82,8 +82,6 @@ export default function Home() {
 
                     <pre>
                         {`FeatureName/
-├── FeatureNameHeader.tsx
-├── FeatureNameHeader.css
 ├── FeatureNameOverview.tsx
 ├── FeatureNameSetup.tsx
 ├── FeatureNameDevelopment.tsx
@@ -93,22 +91,17 @@ export default function Home() {
                 </li>
 
                 <li>
-                    Create the feature header component.
-
-                    <p>
-                        You may copy the existing feature
-                        header template and update the
-                        navigation links.
-                    </p>
+                    Use the universal <code>FeatureHeader</code> component inside each page.
+                    No header file needs to be created. Just pass the required props:
 
                     <pre>
-                        {`<NavLink
-    to="/feature-name"
->
-`}
+                        {`<FeatureHeader
+    title="FeatureName"
+    description="Brief description of the feature."
+    basePath="/feature-name"
+/>`}
                     </pre>
                 </li>
-
                 <li>
                     Every feature must contain these pages:
 
@@ -147,8 +140,7 @@ export default function Home() {
                     <pre>
                         {`FeatureName/
 ├── assets/
-├── FeatureName.css
-└── FeatureNameHeader.css`}
+└── FeatureName.css`}
                     </pre>
                 </li>
 

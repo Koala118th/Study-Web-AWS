@@ -2,14 +2,19 @@ import { useEffect, useState } from "react";
 
 import { getFile } from "../../api/s3";
 import "./S3.css";
-import S3Header from "./S3Header";
+import FeatureHeader from "../../components/FeatureHeader";
 // Assets
 import image1 from "./assets/s3-dev-1.png";
+
 
 export default function S3Development() {
     return (
         <div className="s3-page">
-            <S3Header />
+            <FeatureHeader
+                title="S3"
+                description="This page is for S3 feature development and testing."
+                basePath="/s3"
+            />
             <hr />
             <QuestionCard1 />
             <QuestionCard2 />
