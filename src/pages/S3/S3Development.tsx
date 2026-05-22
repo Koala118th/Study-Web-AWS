@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+import { getFile } from "../../api/s3";
 import "./S3.css";
 import S3Header from "./S3Header";
 // Assets
@@ -12,6 +13,7 @@ export default function S3Development() {
             <hr />
             <QuestionCard1 />
             <QuestionCard2 />
+            <QuestionCard3 />
         </div>
     );
 }
@@ -289,5 +291,44 @@ export function PolicyCodeIAM() {
 }
 
 export function QuestionCard3() {
+    const [imageUrl, setImageUrl] = useState("");
 
+    useEffect(() => {
+        async function fetchImage() {
+            try {
+                const data = await getFile(
+                    "Screenshot 2026-05-14 205849.png"
+                );
+
+                setImageUrl(data.url);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchImage();
+    }, []);
+
+    return (
+        <div className="section-card">
+            <h2>Task: Accessing S3 Object using API</h2>
+
+            <h3>
+                Try to access the S3 object using the API endpoint provided by your backend.
+            </h3>
+
+            <div className="code-section-box">
+                Sample code for fetching an S3 object through an API endpoint:
+
+                <div className="code-section">
+                    <span className="json-code">
+                        {`import { getFile } from "path-to-api/s3";`}
+                    </span>
+
+                    <br />
+                    <img src={imageUrl} alt="S3 Object" />
+                </div>
+            </div>
+        </div>
+    );
 }
