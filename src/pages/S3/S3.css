@@ -259,3 +259,23 @@ td {
 
     outline: none;
 }
+
+/* =========================
+   Buttons
+========================= */
+.delete-button-small {
+    position: absolute;
+    right: -16px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: "28px";
+    height: "28px";
+    cursor: "pointer";
+    font-weight: "bold";
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+    line-height: 1;
+}
