@@ -6,7 +6,10 @@ dotenv.config();
 import s3Router from "./routes/s3.js";
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ 
+    origin: true,
+    credentials: true
+ }));
 app.use(express.json());
 
 app.use("/api/s3", s3Router);
