@@ -105,7 +105,7 @@ export function TaskCard3(){
                     </p>
                     <div className="note-box">
                         <strong>Note:</strong>
-                        {" "} Exit and then SSH back in
+                        {" "} Exit and then SSH back in, might need to run "sudo service docker start" again, i dont remember
                     </div>
                 </li>
                 <li>
