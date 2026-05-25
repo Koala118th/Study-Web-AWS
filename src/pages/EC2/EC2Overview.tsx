@@ -1,8 +1,9 @@
 import FeatureHeader from "../../components/FeatureHeader";
 import "./EC2.css";
+import "../../styles/components.css"
 export default function S3Overview() {
     return (
-        <div className="ec2-page">
+        <div className="page">
             <FeatureHeader
                 title="EC2"
                 description="This page is for EC2 feature development and testing."
@@ -14,7 +15,7 @@ export default function S3Overview() {
                 <h2>What is EC2?</h2>
                 <h3>Definition</h3>
                 <p>
-                    EC2 or Elastic Compute Cloud, is a compute service that provides resizable compute capacity in the cloud
+                    EC2 or Elastic Compute Cloud, is a compute service that provides resizable compute capacity in the cloud. Each EC2 instance is essentially a remote virtual computer you can configure, launch, and pay for by the hour or second.
                 </p>
 
                 <h3>Pricing Information</h3>
