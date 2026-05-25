@@ -6,13 +6,19 @@ import multer from "multer";
 dotenv.config();
 
 const router = express.Router();
-const s3 = new S3Client({
+
+let s3Config = {
     region: process.env.S3_BUCKET_REGION,
-    credentials: {
+};
+
+if (process.env.AWS_ACCESS_KEY_ID) {
+    s3Config.credentials = {
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    },
-});
+    };
+}
+
+const s3 = new S3Client(s3Config);
 
 
 const upload = multer({ storage: multer.memoryStorage() });
