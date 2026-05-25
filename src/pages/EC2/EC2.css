@@ -1,6 +1,108 @@
-h3 {
-    margin-top: 8px;
+.ec2-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.7;
+    color: #1f2937;
 }
-h4 {
-    margin-top: 8px;
+
+/* =========================
+   Section Cards
+========================= */
+
+.section-card {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   Headings
+========================= */
+
+.ec2-page h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 2rem;
+}
+
+/* =========================
+   Lists
+========================= */
+
+.ec2-page ol {
+    padding-left: 1.5rem;
+}
+
+.ec2-page ol li {
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   Notes
+========================= */
+
+.note-box {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-right: 4px solid #2563eb;
+    border-radius: 10px;
+    color: #1e3a8a;
+}
+
+/* =========================
+   Checklist Styling
+========================= */
+
+.checklist-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checklist-item label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-top: 0.2rem;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* =========================
+   Images
+========================= */
+
+.ec2-page img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 14px;
+    border: 1px solid #d1d5db;
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Image Captions
+========================= */
+
+.image-caption {
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-style: italic;
 }
