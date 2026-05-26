@@ -9,3 +9,14 @@ services:
       - .:/app
       - /app/node_modules
     command: npm run dev
+    depends_on:
+      - backend
+    
+  backend:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: node ./server/server.js
+    ports:
+      - "3000:3000"
