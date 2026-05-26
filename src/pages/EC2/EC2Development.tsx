@@ -18,6 +18,7 @@ export default function S3Overview() {
             <TaskCard1/>
             <TaskCard2/>
             <TaskCard3/>
+            <TaskCard4/>
         </div>
     )
 }
@@ -127,6 +128,43 @@ export function TaskCard3(){
                     <div className="note-box">
                         <strong>Note:</strong>
                         {" "} Open public ip adress of EC2 and port 5173. Example: 13.212.176.122:5173
+                    </div>
+                </li>
+            </ol>
+        </div>
+    )
+}
+
+export function TaskCard4(){
+    return(
+        <div className="section-card">
+            <h2>How to set up in EC2 to be able to run the S3 demonstration</h2>
+            <ol>
+                <li>
+                    <strong>After using git clone go get the project, make a .env file using GNU NANO</strong>
+                    <p>
+                        nano .env
+                    </p>
+                    <strong>This opens up the NANO GUI, copy the S3_BUCKET_REGION and S3_BUCKET_NAME like this format</strong>
+                    <p>
+                        S3_BUCKET_REGION=ap-southeast-1<br/>
+                        S3_BUCKET_NAME=my-bucket
+                    </p>
+                    <strong>After you finish writing, ctrl x to exit, press y to agree to save, enter to confirm</strong>
+                </li>
+                <li>
+                    <strong>Extend network hop limit to 2</strong><br/>
+                    <label>When an application runs directly on EC2, the AWS SDK automatically queries the Instance Metadata Service (IMDS) at 169.254.169.254 to get temporary credentials from the attached IAM role. By default, EC2 instances use IMDSv2 with a hop limit of 1. Docker containers add a network hop, so the TTL expires before the metadata request reaches IMDS. Run this command to extend the hop limit to 2</label><br/>
+                    <p>
+                        aws ec2 modify-instance-metadata-options \<br/>
+                            --instance-id i-0abc1234def56789 \ <br/>
+                            --http-put-response-hop-limit 2 \<br/>
+                            --http-endpoint enabled \<br/>
+                            --region ap-southeast-1
+                    </p>
+                    <div className="note-box">
+                        <strong>Note:</strong>
+                        {" "} adjust to your instance id and region
                     </div>
                 </li>
             </ol>
